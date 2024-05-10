@@ -1,13 +1,20 @@
-
-
+import React from 'react';
+import { BrowserRouter,Routes,Route} from 'react-router-dom'
+import SignupBmsons from './components/SignupBmsons';
 
 function App() {
-  return (
-   <>
-   
-    <h1>Hello world</h1>
-   
-   </>
+  return(
+    <>
+    
+    <BrowserRouter >
+      <Routes>
+      <Route path="/" element={<SignupBmsons/>}/>
+       </Routes>
+     </BrowserRouter>
+     
+    
+    </>
+
   );
 }
 
