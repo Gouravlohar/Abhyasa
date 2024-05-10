@@ -1,0 +1,65 @@
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f3f4f6; /* Use your desired background color */
+}
+
+.signup-form {
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 40px;
+    width: 400px;
+    max-width: 90%;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #4b5563; /* Adjust text color */
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d1d5db; /* Adjust border color */
+    border-radius: 4px;
+    outline: none;
+}
+
+.btn-signup {
+    background-color: #392467; /* Adjust button background color */
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-signup:hover {
+    background-color: #211145; /* Adjust button hover background color */
+}
+
+.button-login {
+    background-color: #392467; /* Adjust button background color */
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.button-login:hover {
+    background-color: #211145; /* Adjust button hover text color */
+}
