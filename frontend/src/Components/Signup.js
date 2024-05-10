@@ -78,8 +78,7 @@ const SignupBmsons = () => {
                 </form>
             </div>
         </div>
-    );
-};
+    
     
     </>
   )
