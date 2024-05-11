@@ -36,7 +36,7 @@ function Hero() {
     <div className="section-container"id="home">
       <div className="hero-section">
         <div className="text-section">
-         
+          {/* <p className="text-headline">❤️ Health comes first</p> */}
           <h2 className="text-title">
             Experience the new way of Examination
           </h2>
