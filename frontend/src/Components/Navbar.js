@@ -52,13 +52,13 @@ function Navbar() {
           </li>
         </ul>
   
-        <button
+        <Link to="/login"><button
           className="navbar-btn"
           type="button"
           onClick={handleLoginBtnClick}
         >
           <FontAwesomeIcon icon={faUser} /> Login
-        </button>
+        </button></Link>
   
         {/* Mobile */}
         <div className={`mobile-navbar ${nav? "open-nav" : ""}`}>

@@ -10,7 +10,7 @@ function Footer() {
         <div className="ft-info">
           <div className="ft-info-p1">
             <p className="ft-title">
-              Abhayasa <span className="ft-sign">+</span>
+              Abhyasa <span className="ft-sign"></span>
             </p>
             <p className="ft-description">
               
@@ -57,7 +57,7 @@ function Footer() {
       </div>
 
       <div className="ft-copyright">
-        <p>© 2013-2023 Abhayasa +. All rights reserved.</p>
+        <p>© 2013-2023 Abhyasa . All rights reserved.</p>
 
         <ul className="ft-social-links">
           <li>

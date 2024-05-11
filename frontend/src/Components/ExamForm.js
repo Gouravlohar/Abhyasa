@@ -11,7 +11,7 @@ function ExamForm() {
   const [studentName, setStudentName] = useState("");
   const [studentNumber, setStudentNumber] = useState("");
   const [studentGender, setStudentGender] = useState("default");
-//   const [examTime, setExamTime] = useState("");
+  const [examTime, setExamTime] = useState("");
   const [preferredMode, setPreferredMode] = useState("default");
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [formErrors, setFormErrors] = useState({});
@@ -73,7 +73,7 @@ function ExamForm() {
     <div className="exam-form-section">
       <h1 className="legal-siteTitle">
         <Link to="/">
-          Abhayasa <span className="legal-siteSign">+</span>
+          Abhyasa <span className="legal-siteSign">+</span>
         </Link>
       </h1>
 
@@ -159,7 +159,7 @@ function ExamForm() {
       </div>
 
       <div className="legal-footer">
-        <p>© 2013-2023 Abhayasa +. All rights reserved.</p>
+        <p>© 2013-2023 Abhyasa . All rights reserved.</p>
       </div>
 
       <ToastContainer autoClose={5000} limit={1} closeButton={false} />
