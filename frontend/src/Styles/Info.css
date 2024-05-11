@@ -3,17 +3,21 @@
     text-align: center;
     background-color: white;
 }
+
 .info-title-content {
     margin: 64px 0 128px 0;
 }
+
 .info-title {
     font-family: 'Poppins', sans-serif;
     font-size: 40px;
     font-weight: bold;
 }
+
 .info-title > span {
     position: relative;
 }
+
 .info-title span::before {
     content: '';
     position: absolute;
@@ -24,6 +28,7 @@
     left: 0;
     bottom: -12px;
 }
+
 .info-description {
     margin: 64px;
     text-align: center;
@@ -33,6 +38,7 @@
     letter-spacing: .8px;
     line-height: 1.8rem;
 }
+
 /* Cards */
 .info-cards-content {
     margin: 64px 0;
@@ -40,29 +46,34 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 32px;
 }
+
 .info-cards {
     height: auto;
     border: 2px solid #d7d3d3;
     border-radius: 12px;
     background-color: white;
     position: relative;
+    padding-bottom: 40px; /* Adjusted padding for button */
 }
+
 .info-card-title {
-    margin: 32px 0 40px 0;
+    margin: 32px 0 16px 0; /* Adjusted margin */
     color: black;
     font-family: 'Poppins', sans-serif;
     font-size: 28px;
     font-weight: bold;
     letter-spacing: .8px;
 }
+
 .info-card-description {
-    margin: 24px;
+    margin: 0 24px 32px 24px; /* Increased margin */
     color: rgb(77, 75, 75);
     font-family: 'Rubik', sans-serif;
     font-size: 18px;
     letter-spacing: .8px;
     line-height: 1.5rem;
 }
+
 .info-card-icon {
     position: absolute;
     top: -24px;
@@ -71,10 +82,33 @@
     background-color: #DCE6FF;
     border-radius: 30px;
 }
+
 .info-fa-icon {
     color: #392467;
     font-size: 24px;
 }
+
+.info-card-button {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #392467;
+    color: white;
+    border: none;
+    border-radius: 50px; /* Making the button round */
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Adding transitions for hover effect */
+}
+
+.info-card-button:hover {
+    background-color: #5c3b91;
+    transform: scale(1.05); /* Increasing size on hover */
+}
+
 /* Responsive */
 @media screen and (max-width: 1000px) {
     .info-description {
@@ -84,6 +118,7 @@
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
 @media screen and (max-width: 700px) {
     .info-description {
         margin: 64px 8px;
