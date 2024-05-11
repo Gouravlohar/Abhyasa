@@ -43,7 +43,7 @@ function Footer() {
           <p className="ft-list-title">Talk To Us</p>
           <ul className="ft-list-items">
             <li>
-              <a href="mailto:support@abhayasaplus.com">support@abhayasaplus.com</a>
+              <a href="mailto:support@abhyasa.com">support@abhyasa.com</a>
             </li>
             
             <li>
@@ -57,7 +57,7 @@ function Footer() {
       </div>
 
       <div className="ft-copyright">
-        <p>© 2013-2023 Abhyasa . All rights reserved.</p>
+        <p>© 2024 Abhyasa . All rights reserved.</p>
 
         <ul className="ft-social-links">
           <li>

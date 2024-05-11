@@ -19,7 +19,7 @@ function Navbar() {
       <div className="navbar-section">
         <h1 className="navbar-title">
           <Link to="/">
-          Abhyasa <span className="navbar-sign">+</span>
+          Abhyasa <span className="navbar-sign"></span>
           </Link>
         </h1>
   

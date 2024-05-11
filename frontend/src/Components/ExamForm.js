@@ -23,8 +23,8 @@ function ExamForm() {
     const errors = {};
     if (!studentName.trim()) {
       errors.studentName = "Student name is required";
-    } else if (studentName.trim().length < 8) {
-      errors.studentName = "Student name must be at least 8 characters";
+    } else if (studentName.trim().length < 6) {
+      errors.studentName = "Student name must be at least 6 characters";
     }
 
     if (!studentNumber.trim()) {
@@ -45,9 +45,9 @@ function ExamForm() {
     //     errors.examTime = "Please select a future exam time";
     //   }
     // }
-    if (preferredMode === "default") {
-      errors.preferredMode = "Please select preferred mode";
-    }
+    // if (preferredMode === "default") {
+    //   errors.preferredMode = "Please select preferred mode";
+    // }
 
     if (Object.keys(errors).length > 0) {
       setFormErrors(errors);
@@ -117,13 +117,13 @@ function ExamForm() {
               <option value="default">Select</option>
               <option value="male">Male</option>
               <option value="female">Female</option>
-              <option value="private">I will inform Doctor only</option>
+              <option value="private">Others</option>
             </select>
             {formErrors.studentGender && <p className="error-message">{formErrors.studentGender}</p>}
           </label>
 
           <br />
-          <label>
+          {/* <label>
             Preferred Test Time:
             <input
               type="datetime-local"
@@ -132,7 +132,7 @@ function ExamForm() {
               required
             />
             {formErrors.examTime && <p className="error-message">{formErrors.examTime}</p>}
-          </label>
+          </label> */}
 
           <br />
           <label>
@@ -143,8 +143,8 @@ function ExamForm() {
               required
             >
               <option value="default">Select</option>
-              <option value="voice">Voice Call</option>
-              <option value="video">Video Call</option>
+              <option value="select">Machine Learning</option>
+              
             </select>
             {formErrors.preferredMode && <p className="error-message">{formErrors.preferredMode}</p>}
           </label>
