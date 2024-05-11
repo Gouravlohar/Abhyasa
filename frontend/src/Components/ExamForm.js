@@ -1,72 +1,38 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Link,useNavigate } from "react-router-dom";
 import "../Styles/ExamForm.css";
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
+import axios from "axios"
+
 
 function ExamForm() {
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  });
-
+  
   const [studentName, setStudentName] = useState("");
   const [studentNumber, setStudentNumber] = useState("");
   const [studentGender, setStudentGender] = useState("default");
-  // const [examTime, setExamTime] = useState("");
   const [preferredMode, setPreferredMode] = useState("default");
-  const [isSubmitted, setIsSubmitted] = useState(false);
-  const [formErrors, setFormErrors] = useState({});
+  const navigate = useNavigate()
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Validate form inputs
-    const errors = {};
-    if (!studentName.trim()) {
-      errors.studentName = "Student name is required";
-    } else if (studentName.trim().length < 6) {
-      errors.studentName = "Student name must be at least 6 characters";
+    try {
+      await axios.post("http://localhost:5000/examForm", {  // Update the URL to match your backend
+        studentName,
+        studentNumber,
+        studentGender,
+        preferredMode,
+      });
+      alert("Exam is getting Ready !!!")
+      navigate("/examportal")
+      // Reset form fields
+      setStudentName("");
+      setStudentNumber("");
+      setStudentGender("default");
+      setPreferredMode("default");
+    } catch (error) {
+      console.error("Error submitting form data:", error);
     }
-
-    if (!studentNumber.trim()) {
-      errors.studentNumber = "Student phone number is required";
-    } else if (studentNumber.trim().length !== 10) {
-      errors.studentNumber = "Student phone number must be of 10 digits";
-    }
-
-    if (studentGender === "default") {
-      errors.studentGender = "Please select student gender";
-    }
-    // if (!examTime) {
-    //   errors.examTime = "Exam time is required";
-    // } else {
-    //   const selectedTime = new Date(examTime).getTime();
-    //   const currentTime = new Date().getTime();
-    //   if (selectedTime <= currentTime) {
-    //     errors.examTime = "Please select a future exam time";
-    //   }
-    // }
-    // if (preferredMode === "default") {
-    //   errors.preferredMode = "Please select preferred mode";
-    // }
-
-    if (Object.keys(errors).length > 0) {
-      setFormErrors(errors);
-      return;
-    }
-
-    // Reset form fields and errors after successful submission
-    setStudentName("");
-    setStudentNumber("");
-    setStudentGender("default");
-    //setExamTime("");
-    setPreferredMode("default");
-    setFormErrors({});
-
-    toast.success("Exam Scheduled !", {
-      position: toast.POSITION.TOP_CENTER,
-      onOpen: () => setIsSubmitted(true),
-      onClose: () => setIsSubmitted(false),
-    });
   };
 
   return (
@@ -91,7 +57,7 @@ function ExamForm() {
               onChange={(e) => setStudentName(e.target.value)}
               required
             />
-            {formErrors.studentName && <p className="error-message">{formErrors.studentName}</p>}
+            
           </label>
 
           <br />
@@ -103,7 +69,7 @@ function ExamForm() {
               onChange={(e) => setStudentNumber(e.target.value)}
               required
             />
-            {formErrors.studentNumber && <p className="error-message">{formErrors.studentNumber}</p>}
+            
           </label>
 
           <br />
@@ -119,7 +85,7 @@ function ExamForm() {
               <option value="female">Female</option>
               <option value="private">Others</option>
             </select>
-            {formErrors.studentGender && <p className="error-message">{formErrors.studentGender}</p>}
+            
           </label>
 
           <br />
@@ -146,15 +112,15 @@ function ExamForm() {
               <option value="select">Machine Learning</option>
               
             </select>
-            {formErrors.preferredMode && <p className="error-message">{formErrors.preferredMode}</p>}
+            
           </label>
 
           <br />
-          <button type="submit" className="text-exam-btn">
+          <button type="submit" className="text-exam-btn" >
             Confirm Test
           </button>
 
-          <p className="success-message" style={{display: isSubmitted ? "block" : "none"}}>Exam details has been sent to the students phone number via SMS.</p>
+          
         </form>
       </div>
 
