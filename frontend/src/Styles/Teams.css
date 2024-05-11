@@ -4,18 +4,22 @@
     text-align: center;
     background-color: white;
 }
+
 .t-title-content {
     margin: 0 0 64px 0;
 }
+
 .t-title {
     font-family: 'Poppins', sans-serif;
     font-size: 40px;
     font-weight: bold;
     letter-spacing: .7px;
 }
+
 .t-title > span {
     position: relative;
 }
+
 .t-title span::before {
     content: '';
     position: absolute;
@@ -26,6 +30,7 @@
     left: 0;
     bottom: -12px;
 }
+
 .t-description {
     margin: 64px auto 0;
     text-align: center;
@@ -35,6 +40,7 @@
     letter-spacing: .8px;
     line-height: 1.8rem;
 }
+
 /* Teams Cards */
 .t-cards-content {
     width: 100%;
@@ -44,52 +50,70 @@
     align-items: center;
     gap: 32px;
 }
+
 .t-card {
-    width: 332px;
-    height: 400px;
-    gap: 32px;
-    text-align: left;
+    width: calc(33.33% - 32px); /* Adjust based on your layout */
+    max-width: 280px; /* Decreased width */
+    height: 230px; /* Increased height */
+    margin-bottom: 32px;
+    text-align: center; /* Center align the content */
     font-family: 'Rubik', sans-serif;
+    position: relative; /* Needed for shadow effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
 }
+
+@media screen and (max-width: 1000px) {
+    .t-card {
+        width: calc(50% - 32px); /* Adjust based on your layout */
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .t-card {
+        width: calc(100% - 32px); /* Adjust based on your layout */
+    }
+}
+
+.t-card-img-container {
+    width: 150px; /* Adjusted smaller size */
+    height: 150px; /* Adjusted smaller size */
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #392467; /* Circular border with color #392467 */
+    box-sizing: border-box; /* Include border in the container's dimensions */
+    margin: 12px auto; /* Adjust the gap between the image and the border */
+}
+
 .t-card-img {
     width: 100%;
-    height: 275px;
-    padding: 16px 32px 0;
-    background-position: center;
-    background-color: #DDE5F8;
-    border-radius: 20px;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the circular container */
 }
-.t-card-name {
-    margin: 12px 0 0 0;
-    font-size: 22px;
-    font-weight: bold;
-    letter-spacing: .7px;
+
+.t-card-info {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
 }
-.t-card-title {
-    margin: 6px 0 8px;
-    color: #494949;
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    letter-spacing: .7px;
-}
+
+.t-card-name,
+.t-card-title,
 .t-card-stars {
-    font-size: 18px;
+    margin: 0;
+}
+
+.t-card-name {
+    font-size: 18px; /* Decreased font size */
     font-weight: bold;
     letter-spacing: .7px;
 }
-.t-card-reviews {
-    color: #5a5a5a;
-    font-size: 18px;
+
+.t-card-title,
+.t-card-stars {
+    font-size: 16px; /* Decreased font size */
     font-weight: bold;
     letter-spacing: .7px;
-}
-/* Responsive */
-@media screen and (max-width: 700px) {
-    .t-title {
-        font-size: 32px;
-    }
-    .t-description {
-        margin: 48px 0 0;
-        font-size: 18px;
-    }
 }
