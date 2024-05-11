@@ -1,5 +1,5 @@
 import React from "react";
-import Doctor from "../Assets/doctor-book-appointment.png";
+import image from "../Assets/image-book-appointment.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCircleCheck,
@@ -48,7 +48,7 @@ function TakeExam() {
       </div>
 
       <div className="ba-image-content">
-        <img src={Doctor} alt="Doctor Group" className="ba-image1" />
+        <img src={image} alt="Group" className="ba-image1" />
       </div>
     </div>
   );

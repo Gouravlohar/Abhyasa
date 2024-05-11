@@ -1,15 +1,11 @@
-body {
-    background-color: #f3f4f6; /* Set the background color for the entire body */
-    margin: 0; /* Remove default margin */
-    font-family: 'Roboto', sans-serif; /* Optional: Set a font family for the entire document */
-}
+
 
 .login-container {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #f3f4f6; /* Use your desired background color */
+    background-color: rgb(218,205,253); /* Use your desired background color */
 }
 
 .login-form {

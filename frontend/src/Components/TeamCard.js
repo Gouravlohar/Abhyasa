@@ -15,7 +15,7 @@ function TeamCard(props) {
             style={{ color: "#F7BB50", paddingRight: "6px" }}
           />
           {props.stars}
-          <span className="t-card-reviews"> ({props.reviews}+ Reviews)</span>
+          <span className="t-card-reviews"> ({props.reviews})</span>
         </p>
       </div>
     );

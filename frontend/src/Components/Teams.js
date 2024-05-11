@@ -22,28 +22,28 @@ function Teams(){
               name="Mr.Gourav Lohar"
               title=""
               stars="4.9"
-              reviews="1800"
+              reviews="Machine Learning"
             />
             <TeamCard
               img={profile2}
               name="Mr.Tushar Kumar"
               title=""
               stars="4.8"
-              reviews="700"
+              reviews="Frontend"
             />
             <TeamCard
               img={profile3}
               name="Mr.Aditya Chauhan"
               title=""
               stars="4.7"
-              reviews="450"
+              reviews="Frontend"
             />
             <TeamCard
               img={profile4}
               name="Mr.Rahul Kumar Rawani"
               title=""
               stars="5.0"
-              reviews="10k"
+              reviews="Full Stack"
             />
           </div>
         </div>

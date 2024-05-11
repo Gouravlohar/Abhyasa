@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Doctor from "../Assets/doctor-picture.png";
+import image from "../Assets/image-picture.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleUp, faFileLines } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate  } from "react-router-dom";
@@ -36,7 +36,7 @@ function Hero() {
     <div className="section-container"id="home">
       <div className="hero-section">
         <div className="text-section">
-          {/* <p className="text-headline">❤️ Health comes first</p> */}
+          
           <h2 className="text-title">
             Experience the new way of Examination
           </h2>
@@ -56,7 +56,7 @@ function Hero() {
         </div>
 
         <div className="hero-image-section">
-          <img className="hero-image1" src={Doctor} alt="Doctor" />
+          <img className="hero-image1" src={image} alt="hero" />
         </div>
       </div>
 

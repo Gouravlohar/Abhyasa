@@ -11,7 +11,7 @@ function ExamForm() {
   const [studentName, setStudentName] = useState("");
   const [studentNumber, setStudentNumber] = useState("");
   const [studentGender, setStudentGender] = useState("default");
-  const [examTime, setExamTime] = useState("");
+  // const [examTime, setExamTime] = useState("");
   const [preferredMode, setPreferredMode] = useState("default");
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [formErrors, setFormErrors] = useState({});
