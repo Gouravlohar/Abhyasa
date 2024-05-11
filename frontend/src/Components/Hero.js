@@ -50,7 +50,7 @@ function Hero() {
             type="button"
             onClick={handleTakeExamClick}
           >
-            <FontAwesomeIcon icon={faFileLines} /> Take mock test
+            <FontAwesomeIcon icon={faFileLines} /> Take Test
           </button>
           
         </div>
