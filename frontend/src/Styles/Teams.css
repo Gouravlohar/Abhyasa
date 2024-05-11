@@ -97,11 +97,16 @@
     left: 0;
     width: 100%;
     transform: translateY(-50%);
+    text-align: center; /* Align the content center */
+    display: flex; /* Align children center */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center align vertically */
 }
 
 .t-card-name,
 .t-card-title,
-.t-card-stars {
+.t-card-stars,
+.t-card-reviews {
     margin: 0;
 }
 
@@ -112,7 +117,8 @@
 }
 
 .t-card-title,
-.t-card-stars {
+.t-card-stars,
+.t-card-reviews {
     font-size: 16px; /* Decreased font size */
     font-weight: bold;
     letter-spacing: .7px;
