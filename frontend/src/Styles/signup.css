@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: rgb(218,205,253);; /* Use your desired background color */
+    background: linear-gradient(45deg, #9CECFB 0%, #65C7F7 50%, #0052D4 100%);
 }
 
 .signup-form {
@@ -33,22 +33,25 @@
     border-radius: 4px;
     outline: none;
 }
-
 .btn-signup {
-    background-color: #392467; /* Adjust button background color */
+    background-color: #392461;
     color: #ffffff;
-    padding: 10px 20px;
+    padding: 15px 30px;
     border: none;
-    border-radius: 4px;
+    border-radius: 50px;
     cursor: pointer;
     outline: none;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    font-size: 1.1em;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .btn-signup:hover {
-    background-color: #211145; /* Adjust button hover background color */
+    background-color: #0041a8;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
 .button-login {
     background-color: #392467; /* Adjust button background color */
     color: #ffffff;

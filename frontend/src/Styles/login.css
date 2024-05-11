@@ -1,80 +1,112 @@
-
-
 .login-container {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: rgb(218,205,253); /* Use your desired background color */
+    background: linear-gradient(45deg, #9CECFB 0%, #65C7F7 50%, #0052D4 100%);
 }
-
 .login-form {
     background-color: #ffffff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    padding: 40px;
-    width: 400px;
+    padding: 50px;
+    width: 500px;
     max-width: 90%;
+    transform: scale(0);
+    animation: formAnimation 0.5s 0.8s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
-.form-group {
-    margin-bottom: 20px;
+@keyframes formAnimation {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 .form-group label {
     display: block;
     margin-bottom: 6px;
     font-weight: bold;
-    color: #4b5563; /* Adjust text color */
+    color: #4b5563;
+    transition: color 0.3s ease;
 }
 
 .form-group input {
     width: 100%;
     padding: 10px;
-    border: 1px solid #d1d5db; /* Adjust border color */
+    border: 1px solid #d1d5db;
     border-radius: 4px;
     outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #0052D4;
 }
 
 .btn-login {
-    background-color: #392467; /* Adjust button background color */
+    background-color: #392461;
     color: #ffffff;
-    padding: 10px 20px;
+    padding: 15px 30px;
     border: none;
-    border-radius: 4px;
+    border-radius: 50px;
     cursor: pointer;
     outline: none;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    font-size: 1.1em;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 
 .btn-login:hover {
-    background-color: #211145; /* Adjust button hover background color */
+    background-color: #0041a8;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
 .forgot-password {
-    color: #4b5563; /* Adjust link color */
+    color: #4b5563;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .forgot-password:hover {
-    color: #6b7280; /* Adjust link hover color */
+    color: #0052D4;
 }
 
 .new-user {
     margin-top: 20px;
     text-align: center;
-    color: #6b7280; /* Adjust text color */
+    color: #6b7280;
 }
 
 .signup-link {
-    color: #6b7280; /* Adjust link color */
+    color: #6b7280;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 .signup-link:hover {
-    color: #4b5563; /* Adjust link hover color */
+    color: #0052D4;
 }
-
+.button-login{
+    background-color: #392461;
+    color: #ffffff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    font-size: 1.1em;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.button-signup:hover {
+    background-color: #0041a8;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
