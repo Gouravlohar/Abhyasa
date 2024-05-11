@@ -18,47 +18,47 @@ function Navbar() {
     return (
       <div className="navbar-section">
         <h1 className="navbar-title">
-          <Link to="/">
+          <a href="/">
           Abhyasa <span className="navbar-sign"></span>
-          </Link>
+          </a>
         </h1>
   
         {/* Desktop */}
         <ul className="navbar-items">
           <li>
-            <Link to="/" className="navbar-links">
+            <a href="/" className="navbar-links">
               Home
-            </Link>
+            </a>
           </li>
           <li>
-            <Link to="#services" className="navbar-links">
+            <a href="#services" className="navbar-links">
               Services
-            </Link>
+            </a>
           </li>
           <li>
-            <Link to="#about" className="navbar-links">
+            <a href="#about" className="navbar-links">
               About
-            </Link>
+            </a>
           </li>
           <li>
-            <Link to="#exam" className="navbar-links">
+            <a href="#exam" className="navbar-links">
               Take Exam
-            </Link>
+            </a>
           </li>
           <li>
-            <Link to="#teams" className="navbar-links">
+            <a href="#teams" className="navbar-links">
               Teams
-            </Link>
+            </a>
           </li>
         </ul>
   
-        <Link to="/login"><button
+        <a href="/login"><button
           className="navbar-btn"
           type="button"
           onClick={handleLoginBtnClick}
         >
           <FontAwesomeIcon icon={faUser} /> Login
-        </button></Link>
+        </button></a>
   
         {/* Mobile */}
         <div className={`mobile-navbar ${nav? "open-nav" : ""}`}>
@@ -68,30 +68,30 @@ function Navbar() {
   
           <ul className="mobile-navbar-links">
             <li>
-              <Link onClick={openNav} to="/">
+              <a onClick={openNav} to="/">
                 Home
-              </Link>
+              </a>
             </li>
             <li>
-              <Link onClick={openNav} to="#services">
+              <a onClick={openNav} href="#services">
                 Services
-              </Link>
+              </a>
             </li>
             <li>
-              <Link onClick={openNav} to="#about">
+              <a onClick={openNav} href="#about">
                 About
-              </Link>
+              </a>
             </li>
           
             <li>
-              <Link onClick={openNav} to="#teams">
+              <a onClick={openNav} href="#teams">
                 Teams
-              </Link>
+              </a>
             </li>
             <li>
-              <Link onClick={openNav} to="#contact">
+              <a onClick={openNav} href="#contact">
                 Contact
-              </Link>
+              </a>
             </li>
           </ul>
         </div>

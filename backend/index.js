@@ -2,6 +2,7 @@ const express = require("express")
 
 require("./db/config")
 const BmSonsUser = require("./db/BmSonsUser")
+const Examform = require("./db/Examform")
 const path = require('path')
 const cors = require('cors')
 const bodyParser = require('body-parser');
@@ -11,7 +12,9 @@ const app = express()
 app.use(express.json())
 app.use(cors())
 app.use(express.static(path.join(__dirname)))
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+
 
 app.post('/SignupBmsons', (req, res) => {
   const { username, email, password } = req.body;
@@ -49,7 +52,20 @@ app.post('/SignupBmsons', (req, res) => {
   
 });
 
+app.post("/examForm", (req, res) => {
+  const { studentName, studentNumber, studentGender, preferredMode } = req.body;
 
+  const newForm = new Examform({
+    studentName,
+    studentNumber,
+    studentGender,
+    preferredMode,
+  });
+
+  newForm.save()
+    .then(() => res.json({ success: true }))
+    .catch(err => res.json({ success: false, error: err.message }));
+});
 
 
 

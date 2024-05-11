@@ -7,6 +7,7 @@ import NotFound from "./Pages/NotFound";
 import Exam from "./Pages/Exam";
 import Signup from "./Components/Signup";
 import Login from "./Components/Login";
+import Examportal from "./Components/Examportal";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/exam" element={<Exam />} />
           <Route path="/signup" element={<Signup/>} />
           <Route path="/login" element={<Login/>} />
+          <Route path="/examportal" element={<Examportal/>} />
           <Route path="*" element={<NotFound />} />
           
         </Routes>
