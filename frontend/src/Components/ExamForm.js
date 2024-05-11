@@ -73,7 +73,7 @@ function ExamForm() {
     <div className="exam-form-section">
       <h1 className="legal-siteTitle">
         <Link to="/">
-          Abhyasa <span className="legal-siteSign">+</span>
+          Abhyasa <span className="legal-siteSign"></span>
         </Link>
       </h1>
 
