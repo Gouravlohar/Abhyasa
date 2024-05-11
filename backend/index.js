@@ -15,13 +15,13 @@ app.use(bodyParser.json());
 
 app.post('/SignupBmsons', (req, res) => {
   const { username, email, password } = req.body;
-  // if (!username || !email || !password) {
-  //     console.log('username Email and password are required');
-  // }
-  // else if (username.includes(' ')) {
-  //     return res.status(400).send('Username cannot contain spaces');
-  // }
-  // else{
+  if (!username || !email || !password) {
+      console.log('username Email and password are required');
+  }
+  else if (username.includes(' ')) {
+      return res.status(400).send('Username cannot contain spaces');
+  }
+  else{
   const user = new BmSonsUser({ username , email, password });
   user.save()
   .then(() => {
@@ -30,7 +30,22 @@ app.post('/SignupBmsons', (req, res) => {
   .catch(err => {
     res.status(500).send('Signup failed');
   });
-  // }
+  }
+
+  app.post('/Login', (req, res) => {
+    const { email, password } = req.body;
+    BmSonsUser.findOne({ email, password })
+      .then(user => {
+        if (user) {
+          res.status(200).send('Login successful');
+        } else {
+          res.status(401).send('Invalid credentials');
+        }
+      })
+      .catch(err => {
+        res.status(500).send('Login failed');
+      });
+  });
   
 });
 
