@@ -45,7 +45,7 @@ function ExamForm() {
 
       <div className="form-container">
         <h2 className="form-title">
-          <span>Take Mock Test</span>
+          <span>Take Test</span>
         </h2>
 
         <form className="form-content" onSubmit={handleSubmit}>
