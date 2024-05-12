@@ -88,7 +88,7 @@
     font-size: 24px;
 }
 
-.info-card-button {
+.info-card-button-a {
     position: absolute;
     bottom: 16px;
     left: 50%;
@@ -104,7 +104,50 @@
     transition: background-color 0.3s, transform 0.3s; /* Adding transitions for hover effect */
 }
 
-.info-card-button:hover {
+.info-card-button-b {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #392467;
+    color: white;
+    border: none;
+    border-radius: 50px; /* Making the button round */
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Adding transitions for hover effect */
+}
+
+.info-card-button-c{
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #392467;
+    color: white;
+    border: none;
+    border-radius: 50px; /* Making the button round */
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Adding transitions for hover effect */
+}
+
+
+.info-card-button-a:hover {
+    background-color: #5c3b91;
+    transform: scale(1.05); /* Increasing size on hover */
+}
+
+.info-card-button-b:hover {
+    background-color: #5c3b91;
+    transform: scale(1.05); /* Increasing size on hover */
+}
+
+.info-card-button-c:hover {
     background-color: #5c3b91;
     transform: scale(1.05); /* Increasing size on hover */
 }

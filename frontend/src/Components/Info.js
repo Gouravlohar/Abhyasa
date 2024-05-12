@@ -2,6 +2,7 @@ import React from "react";
 import InformationCard from "./InformationCard";
 import { faLaptop, faRobot, faRankingStar } from "@fortawesome/free-solid-svg-icons";
 import "../Styles/Info.css";
+import {Link} from "react-router-dom"
 
 function Info() {
   return (
@@ -18,7 +19,7 @@ function Info() {
       </div>
 
       <div className="info-cards-content">
-        <InformationCard
+        <Link to="/add"><InformationCard
           title="AI-driven Cheating Detection"
           description="
           Our platform uses AI algorithms to spot cheating 
@@ -26,9 +27,9 @@ function Info() {
           and integrity for all students. Experience secure testing 
           with advanced technology at your fingertips."
           icon={faRobot}
-        />
+        /></Link>
 
-        <InformationCard
+        <Link to="/mouth_detect"><InformationCard
           title="Virtual proctoring"
           description="
           We combine computer vision and machine learning to 
@@ -36,9 +37,9 @@ function Info() {
           in online assessments. Experience the seamless integration of 
           advanced technologies for secure and reliable exam proctoring."
           icon={faLaptop}
-        />
+        /></Link>
 
-        <InformationCard
+        <Link to="/mouth_detect"><InformationCard
           title="Fairness Assurance systems"
           description="We implement robust systems to ensure students are
            graded authentically, prioritizing comprehension and effort
@@ -46,7 +47,7 @@ function Info() {
             on critical thinking and creativity, empowering students to 
             showcase their true skills."
           icon={faRankingStar}
-        />
+        /></Link>
       </div>
     </div>
   );
