@@ -53,3 +53,6 @@
 ![image](https://github.com/Gouravlohar/Machine-Learning/assets/55839674/0f31fa44-11fc-4410-afa4-8df8bad2522a)
 ![image](https://github.com/Gouravlohar/Machine-Learning/assets/55839674/58208074-6ef1-4728-8374-2427e132e986)
 ![image](https://github.com/Gouravlohar/Machine-Learning/assets/55839674/7300da2b-ec16-40bf-bf2d-25c68b94bf60)
+![image](https://github.com/Gouravlohar/Machine-Learning/assets/55839674/e513199a-ae7a-4597-a7e6-fcea51596fc7)
+![image](https://github.com/Gouravlohar/Machine-Learning/assets/55839674/af180b26-60b8-4e25-9663-e83422c1e21f)
+
