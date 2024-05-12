@@ -8,8 +8,6 @@
 
 <h1 style="text-align: center;">Team - Semicolon</h1>
 
-<h1 style="text-align: center;">Team - Semicolon</h1>
-
 * Gourav Lohar [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&style=flat-square)](https://www.linkedin.com/)
 * Aditya Chauhan [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&style=flat-square)](https://www.linkedin.com/)
 * Tushar Kumar [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&style=flat-square)](https://www.linkedin.com/)
