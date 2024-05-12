@@ -9,8 +9,8 @@
 <h1 style="text-align: center;">Team - Semicolon</h1>
 
 <div style="margin: 0 auto; width: max-content;">
-    | Name          | Social                                                                                      |
-    |---------------|---------------------------------------------------------------------------------------------|
+    | Name          | Social |
+    |---------------|--------|
     | Gourav Lohar  | [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&style=flat-square)](https://www.linkedin.com/)    |
     | Aditya Chauhan| [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&style=flat-square)](https://www.linkedin.com/)    |
     | Tushar Kumar  | [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&style=flat-square)](https://www.linkedin.com/)    |
