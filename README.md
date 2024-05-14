@@ -1,9 +1,5 @@
-<h1 style="text-align: center;">Problem Statement</h1>
-<div style="text-align: justify;">
-    <p style="font-weight: bold;">
-        Academic integrity is under threat in today's digital age since material is so easily accessible online. With the advent of remote learning and online exams, educational institutions face considerable challenges in combating cheating. To address this issue, a comprehensive solution must be developed that can successfully prevent cheating during tests in online contexts.
-    </p>
-</div>
+Academic integrity is under threat in today's digital age since material is so easily accessible online. With the advent of remote learning and online exams, educational institutions face considerable challenges in combating cheating. To address this issue, a comprehensive solution must be developed that can successfully prevent cheating during tests in online contexts.
+
 
 
 <h1 style="text-align: center;">Team - Semicolon</h1>
