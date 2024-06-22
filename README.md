@@ -4,10 +4,6 @@ Academic integrity is under threat in today's digital age since material is so e
 
 <h1 style="text-align: center;">Team - Semicolon</h1>
 
-* Gourav Lohar [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&style=flat-square)](https://www.linkedin.com/in/gouravlohar/)
-* Aditya Chauhan [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&style=flat-square)](https://www.linkedin.com/in/i-am-aditya-chauhan/)
-* Tushar Kumar [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&style=flat-square)](https://www.linkedin.com/in/tushar-kumar-506000305/)
-* Rahul Rawani [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&style=flat-square)](https://www.linkedin.com/in/rahul-kumar-rawani-developer/)
 
 
 
